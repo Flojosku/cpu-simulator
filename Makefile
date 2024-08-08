@@ -1,7 +1,10 @@
 # Makefile for a simple C++ project
 
-# Define the source files
-SRC = main.cpp
+# Define the source directory
+SRC_DIR = src
+
+# Gather all .cpp files from the src directory
+SRC = $(wildcard $(SRC_DIR)/*.cpp)
 
 # Define the output executable
 OUTPUT = simulate.out
